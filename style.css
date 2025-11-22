@@ -82,7 +82,7 @@ nav a {
     top: 0%;
     right: 0px;        /* pequeno espaço à direita */
     width: 90%;         /* deixa um respiro lateral */
-    height: 70%;
+    height: 80%;
     object-fit: cover;
     border-radius: 15px;
     opacity: 0.95;
@@ -92,7 +92,7 @@ nav a {
 /* IMAGEM PEQUENA MAIOR */
 .mini-img {
     position: absolute;
-    top: 35%;
+    top: 40%;
     left: 0px;          /* pequeno espaço à esquerda */
     transform: translateY(-50%);
     width: 340px;        /* maior */
@@ -106,10 +106,10 @@ nav a {
 /* TEXTO */
 .curso-conteudo {
     position: absolute;
-    right: 40px;
-    top: 35%;
+    right: 30px;
+    top: 40%;
     transform: translateY(-50%);
-    width: 52%;
+    width: 54%;
     z-index: 20;
 }
 
@@ -123,6 +123,7 @@ nav a {
     color: #f7f7f2;
     line-height: 1.6;
 }
+
 
 
 
