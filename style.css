@@ -79,8 +79,8 @@ nav a {
 .banner-img {
     position: absolute;
     top: 0;
-    right: -10px;
-    width: 90%;
+    right: -5px;
+    width: 300px;
     height: 100%;
     object-fit: cover;
     border-radius: 18px;
@@ -92,7 +92,7 @@ nav a {
 .mini-img {
     position: absolute;
     top: 50%;
-    left: 10px;
+    left: 5px;
     transform: translateY(-50%);
     width: 300px;   /* aumentei um pouco */
     height: 205px;  /* aumentei um pouco */
@@ -124,6 +124,7 @@ nav a {
     line-height: 1.5;
 
 }
+
 
 
 
