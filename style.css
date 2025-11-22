@@ -71,6 +71,7 @@ nav a {
     color: inherit;
 }
 
+/* CARD GRANDE */
 .card-curso {
     position: relative;
     width: 100%;
@@ -79,13 +80,15 @@ nav a {
     height: 330px;
     border-radius: 15px;
     overflow: hidden;
+    display: flex;
+    align-items: stretch;
 }
 
-/* BANNER */
+/* BANNER (fica atrás ocupando o espaço do texto) */
 .banner-img {
     position: absolute;
-    top: 0%;
-    right: 0px;
+    top: 0;
+    right: 0;
     width: 90%;
     height: 70%;
     object-fit: cover;
@@ -94,33 +97,36 @@ nav a {
     z-index: 0;
 }
 
+/* CONTAINER DO TEXTO — A MOLDURA INVISÍVEL */
+.curso-conteudo {
+    position: relative;
+    z-index: 2;
+    margin-left: 350px;        /* deixa espaço fixo para a mini imagem */
+    padding: 40px 60px;        /* ISSO mantém os limites fixos sempre */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 15px;
+    height: 100%;
+    width: calc(100% - 350px);
+    box-sizing: border-box;
+}
+
 /* IMAGEM PEQUENA */
 .mini-img {
     position: absolute;
     top: 35%;
-    left: 0px;
+    left: 0;
     transform: translateY(-50%);
     width: 340px;
     height: 200px;
     object-fit: cover;
     border-radius: 10px;
-    z-index: 10;
+    z-index: 3;
     box-shadow: 0 6px 18px #0005;
 }
 
 /* TEXTO */
-.curso-conteudo {
-    position: absolute;
-    right: 50px;
-    top: 35%;
-    transform: translateY(-50%);
-    width: 65%;
-    z-index: 20;
-    display: flex;
-    flex-direction: column;
-    gap: 2px;
-}
-
 .curso-conteudo h2 {
     font-size: 30px;
     color: #ffffff;
@@ -131,6 +137,7 @@ nav a {
     color: #f7f7f2;
     line-height: 1.6;
 }
+
 
 /* ============================================================
    RESPONSIVIDADE — impede que o texto "saia do lugar"
@@ -203,5 +210,6 @@ nav a {
         top: 35%;
     }
 }
+
 
 
