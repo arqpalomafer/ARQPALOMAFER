@@ -3,7 +3,7 @@ body {
     margin: 0;
     display: flex;
     background-color: #faf9f3;
-    font-family: Arial, sans-serif;
+    font-family: Times-new-roman, sans-serif;
 }
 
 /* ======================= SIDEBAR ======================= */
@@ -123,6 +123,7 @@ nav a {
     color: #f7f7f2;
     line-height: 1.6;
 }
+
 
 
 
