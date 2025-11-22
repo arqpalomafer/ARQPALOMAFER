@@ -92,7 +92,7 @@ nav a {
 /* IMAGEM PEQUENA MAIOR */
 .mini-img {
     position: absolute;
-    top: 50%;
+    top: 35%;
     left: 0px;          /* pequeno espaço à esquerda */
     transform: translateY(-50%);
     width: 340px;        /* maior */
@@ -123,6 +123,7 @@ nav a {
     color: #f7f7f2;
     line-height: 1.6;
 }
+
 
 
 
