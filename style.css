@@ -79,7 +79,7 @@ nav a {
 /* BANNER GRANDE */
 .banner-img {
     position: absolute;
-    top: 50%;
+    top: 0%;
     right: 0px;        /* pequeno espaço à direita */
     width: 90%;         /* deixa um respiro lateral */
     height: 70%;
@@ -123,6 +123,7 @@ nav a {
     color: #f7f7f2;
     line-height: 1.6;
 }
+
 
 
 
