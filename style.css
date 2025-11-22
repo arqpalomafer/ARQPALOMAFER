@@ -15,6 +15,15 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    position: fixed; /* sidebar fixa */
+    left: 0;
+    top: 0;
+}
+
+.container {
+    flex: 1;
+    padding: 20px;
+    margin-left: 120px; /* evita que o conteúdo entre dentro da sidebar */
 }
 
 .logo img {
@@ -42,10 +51,6 @@ nav a {
 }
 
 /* ======================= ÁREA PRINCIPAL ======================= */
-.container {
-    flex: 1;
-    padding: 20px;
-}
 
 .topbar {
     background-color: #f2e7db;
@@ -59,29 +64,29 @@ nav a {
     margin-top: 10px;
 }
 
-/* ======================= CARD DE CURSO (ESTILO SOMOS GUARARAPES) ======================= */
+/* ======================= CARD DE CURSO ======================= */
+
 .card-link {
     text-decoration: none;
     color: inherit;
 }
 
-/* CARD GRANDE */
 .card-curso {
     position: relative;
     width: 100%;
-    max-width: 1400px;   /* bem mais largo, igual do SOMOS */
+    max-width: 1400px;
     margin: 20px auto;
-    height: 330px;       /* card maior */
+    height: 330px;
     border-radius: 15px;
     overflow: hidden;
 }
 
-/* BANNER GRANDE */
+/* BANNER */
 .banner-img {
     position: absolute;
     top: 0%;
-    right: 0px;        /* pequeno espaço à direita */
-    width: 90%;         /* deixa um respiro lateral */
+    right: 0px;
+    width: 90%;
     height: 70%;
     object-fit: cover;
     border-radius: 15px;
@@ -89,14 +94,14 @@ nav a {
     z-index: 0;
 }
 
-/* IMAGEM PEQUENA MAIOR */
+/* IMAGEM PEQUENA */
 .mini-img {
     position: absolute;
-    top: 35%;
-    left: 0px;          /* pequeno espaço à esquerda */
+    top: 50%;
+    left: 0px;
     transform: translateY(-50%);
-    width: 340px;        /* maior */
-    height: 200px;       /* maior */
+    width: 340px;
+    height: 200px;
     object-fit: cover;
     border-radius: 10px;
     z-index: 10;
@@ -109,8 +114,11 @@ nav a {
     right: 50px;
     top: 35%;
     transform: translateY(-50%);
-    width: 70%;
+    width: 65%;
     z-index: 20;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
 }
 
 .curso-conteudo h2 {
@@ -124,30 +132,74 @@ nav a {
     line-height: 1.6;
 }
 
+/* ============================================================
+   RESPONSIVIDADE — impede que o texto "saia do lugar"
+   ============================================================ */
 
+/* --- Telas médias (tablets) --- */
+@media (max-width: 1100px) {
+    .curso-conteudo {
+        width: 60%;
+        right: 20px;
+    }
 
+    .curso-conteudo h2 {
+        font-size: 26px;
+    }
 
+    .curso-conteudo p {
+        font-size: 16px;
+    }
 
+    .mini-img {
+        width: 260px;
+        height: 160px;
+    }
+}
 
+/* --- Telas pequenas (celulares grandes) --- */
+@media (max-width: 850px) {
 
+    .card-curso {
+        height: auto;
+        padding-bottom: 250px;
+    }
 
+    .banner-img {
+        width: 100%;
+        height: 55%;
+    }
 
+    .mini-img {
+        width: 220px;
+        height: 140px;
+        top: 38%;
+    }
 
+    .curso-conteudo {
+        position: absolute;
+        top: 75%;
+        left: 20px;
+        right: 20px;
+        transform: translateY(0);
+        width: auto;
+    }
+}
 
+/* --- Celulares pequenos --- */
+@media (max-width: 600px) {
+    .curso-conteudo h2 {
+        font-size: 22px;
+    }
 
+    .curso-conteudo p {
+        font-size: 15px;
+        line-height: 1.4;
+    }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    .mini-img {
+        width: 180px;
+        height: 120px;
+        top: 35%;
+    }
+}
