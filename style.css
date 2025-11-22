@@ -38,7 +38,7 @@ nav a {
 .icon {
     width: 60px;
     height: 60px;
-    background-color: #242424;
+    background-color: #5d3b25;
     border-radius: 15px;
     margin: 15px 0;
     display: flex;
@@ -71,52 +71,56 @@ nav a {
     color: inherit;
 }
 
-/* CARD GRANDE */
 .card-curso {
     position: relative;
     width: 100%;
     max-width: 1400px;
     margin: 20px auto;
-    height: 100vh;
+    height: 330px;
     border-radius: 15px;
     overflow: hidden;
-    display: flex;
-    align-items: stretch;
 }
 
-/* BANNER (fica atrás ocupando o espaço do texto) */
-.banner {
-    position: relative;
+/* BANNER */
+.banner-img {
+    position: absolute;
+    top: 0%;
+    right: 0px;
     width: 90%;
-    height: 70%; /* ou a altura do seu banner */
-    display: flex;
-    align-items: center;   /* centraliza verticalmente */
-    justify-content: flex-start; /* mantém o conteúdo à esquerda */
-    padding: 40px 60px;    /* moldura invisível em cima/embaixo e laterais */
-    box-sizing: border-box;
-}
-
-.curso-conteudo {
-    max-width: 150px;      /* largura máxima do conteúdo */
-    text-align: justify;    /* texto justificado */
-    z-index: 2;         
+    height: 70%;
+    object-fit: cover;
+    border-radius: 15px;
+    opacity: 0.95;
+    z-index: 0;
 }
 
 /* IMAGEM PEQUENA */
 .mini-img {
     position: absolute;
     top: 35%;
-    left: 0;
+    left: 0px;
     transform: translateY(-50%);
     width: 340px;
     height: 200px;
     object-fit: cover;
     border-radius: 10px;
-    z-index: 3;
+    z-index: 10;
     box-shadow: 0 6px 18px #0005;
 }
 
 /* TEXTO */
+.curso-conteudo {
+    position: absolute;
+    right: 50px;
+    top: 35%;
+    transform: translateY(-50%);
+    width: 65%;
+    z-index: 20;
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
 .curso-conteudo h2 {
     font-size: 30px;
     color: #ffffff;
@@ -127,7 +131,6 @@ nav a {
     color: #f7f7f2;
     line-height: 1.6;
 }
-
 
 /* ============================================================
    RESPONSIVIDADE — impede que o texto "saia do lugar"
@@ -200,11 +203,3 @@ nav a {
         top: 35%;
     }
 }
-
-
-
-
-
-
-
-
