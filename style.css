@@ -75,7 +75,7 @@ nav a {
     position: relative;
     width: 100%;
     max-width: 1400px;
-    margin: 20px auto;
+    margin: 0px auto;
     height: 330px;
     border-radius: 15px;
     overflow: hidden;
@@ -89,7 +89,7 @@ nav a {
     width: 90%;
     height: 70%;
     object-fit: cover;
-    border-radius: 15px;
+    border-radius: 10px;
     opacity: 0.95;
     z-index: 0;
 }
@@ -203,4 +203,5 @@ nav a {
         top: 35%;
     }
 }
+
 
